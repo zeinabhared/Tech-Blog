@@ -11,7 +11,7 @@ Comment.init(
         allowNull: false,
         autoIncrement: true
       },
-      user_id: {
+    user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
@@ -19,7 +19,7 @@ Comment.init(
           key: 'id'
         }
       },
-      post_id: {
+    post_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
@@ -27,7 +27,7 @@ Comment.init(
           key: 'id'
         }
       },
-      comment_text: {
+    comment: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {

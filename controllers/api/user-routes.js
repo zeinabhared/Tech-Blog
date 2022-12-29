@@ -4,7 +4,7 @@ const withAuth = require('../../utils/auth');
 
 // GET route to view all Users
 router.get('/', (req, res) => {
-    // Access our User model and run .findAll() method
+    // Access our User model 
     User.findAll({
         attributes: { exclude: ['password'] }
     })
@@ -25,11 +25,11 @@ router.get('/:id', (req, res) => {
         include: [
             {
               model: Post,
-              attributes: ['id', 'title', 'post_content', 'created_at']
+              attributes: ['id', 'title', 'content', 'created_at']
             },
             {
                 model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
+                attributes: ['id', 'comment', 'created_at'],
                 include: {
                   model: Post,
                   attributes: ['title']
