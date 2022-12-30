@@ -1,4 +1,4 @@
-<div>
+<div class="container-fluid">
    <h2>Dashboard: Your Posts</h2><hr>
 
     <a href="/dashboard/create">
@@ -10,7 +10,9 @@
 {{#each posts as |post|}}
 {{> post-info post}}
     <a href="/dashboard/edit/{{post.id}}">
+    <div class="container-fluid">
     <button class="btn btn-dark">Edit</button></a>
+    </div>
 {{/each}}
 
 {{else}}

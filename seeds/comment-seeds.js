@@ -12,13 +12,13 @@ const commentData = [
         comment: "Great post! Thank you so much!"
     },
     {
-        user_id: 4,
-        post_id: 3,
+        user_id: 3,
+        post_id: 4,
         comment: "Thanks for sharing such valuable information. Appreciate it!"
     },
     {
-        user_id: 3,
-        post_id: 4,
+        user_id: 4,
+        post_id: 3,
         comment: "Wow very insightful, thank you for this."
     },
 ]
