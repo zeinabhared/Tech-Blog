@@ -11,9 +11,7 @@
         {{content}}
     </div>
         <div>
-            <b>{{user.username}}</b> | 
-            <a href="https://twitter.com/{{user.twitter}}"><i class="fab fa-twitter"></i></a> 
-            <a href="https://github.com/{{user.github}}"><i class="fab fa-github"></i></a>
+             {{user.username}} | 
              {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         </div>
 </div>
