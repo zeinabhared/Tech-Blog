@@ -18,17 +18,18 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     {{#if loggedIn}}
-                    <a class="nav-item nav-link active" href="/">Home</a>
-                    <a class="nav-item nav-link active" href="/dashboard">Dashboard</a>
-                    <a class="nav-item nav-link active" href="/dashboard/create">Create Post</a>
-                    <a id="logout" class="nav-item nav-link active" href="/logout">Logout</a>
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/dashboard/create">Create Post</a></li>
+                    <li class="nav-item active"><a id="logout" class="nav-link" href="/logout">Logout</a></li>
                     {{else}}
-                    <a class="nav-item nav-link active" href="/">Home</a>
-                    <a class="nav-item nav-link active" href="/login">Login</a>
-                       <a class="nav-item nav-link active" href="/signup">Signup</a>
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/signup">Signup</a></li>
+                </ul>
                     {{/if}}
                 </div>
             </div>
