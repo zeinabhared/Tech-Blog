@@ -12,27 +12,26 @@
 
 <body class="d-flex flex-column min-vh-100"> 
 
-    <header class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/">The Tech Blog</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    {{#if loggedIn}}
-                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/dashboard">Dashboard</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/dashboard/create">Create Post</a></li>
-                    <li class="nav-item active"><a id="logout" class="nav-link" href="/logout">Logout</a></li>
-                    {{else}}
-                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/login">Login</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/signup">Signup</a></li>
-                </ul>
-                    {{/if}}
-                </div>
-            </div>
+<header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">The Tech Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                {{#if loggedIn}}
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/dashboard/create">Create Post</a></li>
+                <li class="nav-item active"><a id="logout" class="nav-link" href="/logout">Logout</a></li>
+                {{else}}
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/login">Login</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/signup">Signup</a></li>
+            </ul>
+                {{/if}}
+        </div>
     </nav>
 </header>
 
